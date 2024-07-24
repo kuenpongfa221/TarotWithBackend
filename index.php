@@ -10,16 +10,25 @@
 <body>
       <!-- Hero -->
   <section class="et-hero-tabs">
-    <h1>STICKY SLIDER NAV</h1>
-    <h3>Sliding content with sticky tab nav</h3>
+    <!-- <h1>STICKY SLIDER NAV</h1> -->
+     <div class="logo">
+      <a href="#">
+        <img src="./images/bywindLogo.png" alt="">
+      </a>
+     </div>
     <div class="et-hero-tabs-container">
-      <a class="et-hero-tab" href="#tab-es6">ES6</a>
-      <a class="et-hero-tab" href="#tab-flexbox">Flexbox</a>
-      <a class="et-hero-tab" href="#tab-react">React</a>
-      <a class="et-hero-tab" href="#tab-angular">Angular</a>
-      <a class="et-hero-tab" href="#tab-other">Other</a>
+      <a class="et-hero-tab" href="#tab-home">預約占卜</a>
+      <a class="et-hero-tab" href="#tab-es6">牌義 • 教學</a>
+      <a class="et-hero-tab" href="#tab-flexbox">客戶回饋</a>
+      <a class="et-hero-tab" href="#tab-react">商品</a>
+      <a class="et-hero-tab" href="#tab-angular">會員登入</a>
+      <a class="et-hero-tab" href="#tab-other">其他</a>
       <span class="et-hero-tab-slider"></span>
     </div>
+    <div class="img-container" id="tab-home">
+      <img src="./images/tarotHeroSec.jpg" alt="">
+    </div>
+    <h3>Sliding content with sticky tab nav</h3>
   </section>
 
   <!-- Main -->
@@ -46,6 +55,6 @@
     </section>
   </main>
 
-  <script src="./script/js.js"></script>
+  <script src="./script/stickyNavigation.js"></script>
 </body>
 </html>

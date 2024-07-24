@@ -1,10 +1,31 @@
 body {
     font-family: "Century Gothic", 'Lato', sans-serif;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
   }
   a {
     text-decoration: none;
   }
-  .et-hero-tabs, .et-slide {
+  .logo{
+    height:10vh;
+  }
+  .logo > a > img{
+    height:100%;
+  }
+  .et-hero-tabs{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 60vh;
+    position: relative;
+    background: #eee;
+    text-align: center;
+    padding: 0 2em;
+  }
+
+  .et-slide{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,12 +47,14 @@ body {
     opacity: 0.6;
   }
   .et-hero-tabs-container {
+    border-top:1px solid black;
+    border-bottom:1px solid black;
     display: flex;
     flex-direction: row;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    top: 0;
     width: 100%;
-    height: 70px;
+    height: 108px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     background: #fff;
     z-index: 10;
@@ -62,6 +85,13 @@ body {
     height: 6px;
     background: #66B1F1;
     transition: left 0.3s ease;
+  }
+  .et-hero-tabs > .img-container {
+    overflow:hidden;
+    height:41vw;
+  }
+  .img-container > img{
+    width:100%;
   }
   @media (min-width: 800px) {
     .et-hero-tabs h1, .et-slide h1 {
