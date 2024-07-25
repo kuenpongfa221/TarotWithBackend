@@ -21,14 +21,14 @@
       <a class="et-hero-tab" href="#tab-es6">牌義 • 教學</a>
       <a class="et-hero-tab" href="#tab-flexbox">客戶回饋</a>
       <a class="et-hero-tab" href="#tab-react">商品</a>
-      <a class="et-hero-tab" href="#tab-angular">會員登入</a>
-      <a class="et-hero-tab" href="#tab-other">其他</a>
+      <a class="et-hero-tab" href="#tab-angular">服務</a>
       <span class="et-hero-tab-slider"></span>
     </div>
     <div class="img-container" id="tab-home">
-      <img src="./images/tarotHeroSec.jpg" alt="">
+      <h2>塔羅，遇見你的內在天賦之旅</h2>
+      <!-- <img src="./images/tarotHeroSec.jpg" alt=""> -->
+       <button id="reserveBtn">立即預約占卜</button>
     </div>
-    <h3>Sliding content with sticky tab nav</h3>
   </section>
 
   <!-- Main -->
@@ -49,10 +49,7 @@
       <h1>Angular</h1>
       <h3>something about angular</h3>
     </section>
-    <section class="et-slide" id="tab-other">
-      <h1>Other</h1>
-      <h3>something about other</h3>
-    </section>
+
   </main>
 
   <script src="./script/stickyNavigation.js"></script>
