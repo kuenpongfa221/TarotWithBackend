@@ -45,26 +45,46 @@
       <!-- <h1>ES6</h1>
       <h3>something about es6</h3> -->
       <!-- <div class="container-fluid"> -->
-        <div class="row">
-          <div class="col-6">123</div>
-          <div class="col-6">456</div>
-        </div>
-        <div class="row">
-          <div class="col-4">  
-            <h2>Card Image</h2>
-            <p>Image at the top (card-img-top):</p>
-            <div class="card" style="width:400px">
-              <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+        <div class="row justify-content-center">
+
+          <div class="col-4 card-col">  
+            <!-- <h2>Card Image</h2>
+            <p>Image at the top (card-img-top):</p> -->
+            <div class="card" style="width:200px">
+              <img class="card-img-top" src="./images/tarots/rws_tarot_00_fool.jpg" alt="Card image" style="width:100%">
               <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                <a href="#" class="btn btn-primary">See Profile</a>
+                <h4 class="card-title">愚人</h4>
+                <p class="card-text">Some example text. John Doe is an architect</p>
+                <a href="#tab-es6" class="btn btn-primary">See Profile</a>
               </div>
             </div>
           </div>
-          
-          <div class="col-4">456</div>
-          <div class="col-4">789</div>
+          <div class="col-4 card-col">  
+            <!-- <h2>Card Image</h2>
+            <p>Image at the top (card-img-top):</p> -->
+            <div class="card" style="width:200px">
+              <img class="card-img-top" src="./images/tarots/rws_tarot_02_high_priestess.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">女祭司</h4>
+                <p class="card-text">Some example text. John Doe is an architect</p>
+                <a href="#tab-es6" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 card-col">  
+            <!-- <h2>Card Image</h2>
+            <p>Image at the top (card-img-top):</p> -->
+            <div class="card" style="width:200px">
+              <img class="card-img-top" src="./images/tarots/cups01.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">聖杯 王牌</h4>
+                <p class="card-text">Some example text. John Doe is an architect</p>
+                <a href="#tab-es6" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-4">456</div>
+          <div class="col-4">789</div> -->
         </div>
       <!-- </div> -->
     </section>
