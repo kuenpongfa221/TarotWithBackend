@@ -583,14 +583,18 @@
   --bs-gutter-x: 1.5rem;
 }
 
-.col-lg-4 {
-  flex: 0 0 auto;
-  width: 33.33333333%;
+@media (min-width: 576px) {
+  .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
 }
 
-.col-sm-6 {
-  flex: 0 0 auto;
-  width: 50%;
+@media (min-width: 992px) {
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
 }
 
 .p-4 {
