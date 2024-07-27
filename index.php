@@ -16,7 +16,8 @@
     /> -->
   <link rel="stylesheet" href="./styles/bootstrap5Fake.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <title>Document</title>
+  <title>隨風而來</title>
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
