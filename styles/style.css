@@ -29,6 +29,11 @@ a {
 }
 .logo {
   height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
 }
 .logo > a > img {
   height: 100%;
@@ -116,7 +121,7 @@ a {
   width: 100%;
   height: 50vw;
   background: linear-gradient(rgba(70, 70, 70, 0.8), rgba(70, 70, 70, 0.8)),
-    url("../images/tarotHeroSec.jpg");
+    url("../images/tarotsSection/tarotHeroSec.jpg");
   background-position: center;
   background-size: cover;
 
@@ -185,3 +190,135 @@ a {
   box-shadow: var(--box-shadow);
 }
 
+.bg-transparent {
+  opacity: 0.6;
+}
+
+.bg-darkgray {
+  background: linear-gradient(rgba(55, 55, 55, 0.8), rgba(55, 55, 55, 0.8));
+  color: whitesmoke;
+  padding: 1rem;
+}
+
+.top-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-container > .top-text {
+  color: khaki;
+}
+
+.footer-top {
+  width: 100%;
+  height: 200px;
+
+  /* background-color: white; */
+  display: flex;
+}
+.footer-left {
+  flex-grow: 1;
+  flex-basis: calc(100% / 6 * 2);
+  height: 100%;
+  /* background-color: khaki; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.footer-logo-a-tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+  width: 12rem;
+}
+.footer-middle {
+  flex-grow: 1;
+  flex-basis: calc(100% / 6 * 4);
+
+  height: 100%;
+  /* background-color: slateblue; */
+}
+/* .footer-right {
+  flex-grow: 1;
+  flex-basis: calc(100% / 6 * 1);
+
+  height: 100%;
+  background-color: teal;
+} */
+
+.footer-bottom {
+  width: 100%;
+  height: 180px;
+}
+
+.footer-bottom > .sign-up {
+  width: 100%;
+  height: calc(100% / 3);
+  /* background-color: gray; */
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-bottom > .social-media {
+  width: 100%;
+  height: calc(100% / 3);
+  /* background-color: rgb(89, 89, 89); */
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-bottom > .copyright {
+  width: 100%;
+  height: calc(100% / 3);
+  /* background-color: rgb(49, 49, 49); */
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul > a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+ul > a > li {
+  list-style: none;
+}
+
+.header-logo-a-tag {
+  height: 100%;
+}
+
+.footer {
+  background-color: rgb(159, 159, 159);
+}
+
+.footer-hr {
+  color: rgb(120, 120, 120);
+  width: 90%;
+  margin: auto;
+}
+
+.copyright {
+  background: rgb(74, 74, 74);
+}

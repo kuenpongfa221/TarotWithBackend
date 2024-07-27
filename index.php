@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -24,7 +25,7 @@
   <section class="et-hero-tabs">
     <!-- <h1>STICKY SLIDER NAV</h1> -->
     <div class="logo">
-      <a href="#">
+      <a href="#" class='header-logo-a-tag'>
         <img src="./images/bywindLogo.png" alt="">
       </a>
     </div>
@@ -36,6 +37,7 @@
       <a class="et-hero-tab" href="#tab-service">服務</a>
       <span class="et-hero-tab-slider"></span>
     </div>
+    <!-- background-image -->
     <div class="img-container" id="tab-reserve">
       <h2>塔羅，遇見你的內在天賦之旅</h2>
       <!-- <img src="./images/tarotHeroSec.jpg" alt=""> -->
@@ -273,7 +275,9 @@
               <a href="#tab-es6" class="btn btn-primary">See Profile</a>
             </div>
           </div>
+        </div>
 
+        <div class="col-4 card-col">
           <div class="card" style="width:200px">
             <img class="card-img-top" src="./images/products/magicCandle.png" alt="Card image" style="width:100%">
             <div class="card-body">
@@ -282,11 +286,13 @@
               <a href="#tab-es6" class="btn btn-primary">See Profile</a>
             </div>
           </div>
+        </div>
 
+        <div class="col-4 card-col">
           <div class="card" style="width:200px">
-            <img class="card-img-top" src="./images/products/" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="./images/products/incense.jpg" alt="Card image" style="width:100%">
             <div class="card-body">
-              <h4 class="card-title">聖杯 王牌</h4>
+              <h4 class="card-title">移動式無線擴香儀</h4>
               <p class="card-text">Some example text. John Doe is an architect</p>
               <a href="#tab-es6" class="btn btn-primary">See Profile</a>
             </div>
@@ -297,12 +303,196 @@
 
     <!-- 服務 -->
     <section class="et-slide" id="tab-service">
-      <h1>Angular</h1>
-      <h3>something about angular</h3>
+      <h1>服務</h1>
+      <div class="row justify-content-center">
+        <div class="col-4 card-col">
+          <div class="card" style="height:200px">
+            <img class="card-img  bg-transparent" src="./images/tarotsSection/tarot-2.jpg" alt="Card image" style="width:100%">
+            <div class="card-body card-img-overlay d-flex justify-content-center flex-column">
+              <div class="bg-darkgray">
+                <h4 class="card-title">塔羅</h4>
+                <p class="card-text">療育 你的內在小孩</p>
+                <a href="#tab-es6" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 card-col">
+          <div class="card" style="width:200px">
+            <img class="card-img  bg-transparent" src="./images/services/ziWei.webp" alt="Card image" style="width:100%">
+            <div class="card-body card-img-overlay d-flex justify-content-center flex-column">
+              <div class="bg-darkgray">
+                <h4 class="card-title">紫微斗數</h4>
+                <p class="card-text">遇見更好的自己</p>
+                <a href="#tab-es6" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 card-col">
+          <div class="card" style="width:200px">
+            <img class="card-img  bg-transparent" src="./images/services/name-1.jpeg" alt="Card image" style="width:100%">
+            <div class="card-body card-img-overlay d-flex justify-content-center flex-column">
+              <div class="bg-darkgray">
+                <h4 class="card-title">姓名學</h4>
+                <p class="card-text">取名與改名</p>
+                <a href="#tab-es6" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
   </main>
 
+  <!-- footer -->
+   <section class="footer">
+    <section class="footer-top" id='footer'>
+      <section class="footer-left">
+        <div class="logo">
+          <a href="#" class='footer-logo-a-tag'>
+            <img src="./images/bywindLogo.png" alt="">
+            <h3>隨風而來</h3>
+          </a>
+          <a href="#"><h3>聯絡我們</h3></a>
+          <a href="#"><h3>常見問題</h3></a>
+        </div>
+      </section>
+      <section class="footer-middle">
+        <!-- php foreach -->
+        <!-- 預約占卜
+牌義 • 教學
+客戶回饋
+商品
+服務 -->
+         <div class="row align-items-center" style="margin-top:2rem; margin-left:1rem;">
+          <div class="col footer-nav">
+            <h3>預約占卜</h3>
+            <ul>
+              <a href=""><li>link</li></a>
+              <a href=""><li>link</li></a>
+              <a href=""><li>link</li></a>
+            </ul>
+          </div>
+
+          <div class="col footer-nav">
+            <h3>牌義 • 教學</h3>
+            <ul>
+              <a href=""><li>link</li></a>
+              <a href=""><li>link</li></a>
+              <a href=""><li>link</li></a>
+            </ul>
+          </div>
+
+          <div class="col footer-nav">
+            <h3>商品</h3>
+            <ul>
+              <a href=""><li>link</li></a>
+              <a href=""><li>link</li></a>
+              <a href=""><li>link</li></a>
+            </ul>
+          </div>
+
+          <div class="col footer-nav">
+            <h3>服務</h3>
+            <ul>
+              <a href=""><li>link</li></a>
+              <a href=""><li>link</li></a>
+              <a href=""><li>link</li></a>
+            </ul>
+          </div>
+
+          <div class="col footer-nav">
+            <h3>預約占卜</h3>
+            <ul>
+              <a href=""><li>link</li></a>
+              <a href=""><li>link</li></a>
+              <a href=""><li>link</li></a>
+            </ul>
+          </div>
+         </div>
+
+        <!-- end of php foreach -->
+      </section>
+
+    </section>
+
+    <hr class='footer-hr'>
+
+    <section class="footer-bottom">
+        <section class='sign-up'>
+            <p style="margin-right:20px;">免費註冊！！:</p>
+            <button>Sign Up</button>
+        </section>
+
+
+        <hr class='footer-hr'>
+        <!-- Section: Social Media -->
+        <section class="social-media">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light rounded-circle m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+            ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light rounded-circle m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+            ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light rounded-circle m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+            ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light rounded-circle m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+            ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light rounded-circle m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light rounded-circle m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+            ></a>
+        </section>
+        <!--End of Section: Social media -->
+          <section class="copyright">
+            © 2024 Copyright: Michael Zhan
+          </section>
+      </section>
+  </section>
+
+  <!-- top fixed circle -->
+   <a href="#">
+    <div class="top-container">
+      <h3 class="top-text">top</h3>
+    </div>
+   </a>
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
   <script src="./script/stickyNavigation.js"></script>
 </body>
