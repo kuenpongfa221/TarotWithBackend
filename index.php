@@ -307,7 +307,7 @@
       <h1>服務</h1>
       <div class="row justify-content-center">
         <div class="col-4 card-col">
-          <div class="card" style="height:200px">
+          <div class="card" style="width:1000px">
             <img class="card-img  bg-transparent" src="./images/tarotsSection/tarot-2.jpg" alt="Card image" style="width:100%">
             <div class="card-body card-img-overlay d-flex justify-content-center flex-column">
               <div class="bg-darkgray">
@@ -350,7 +350,7 @@
   </main>
 
   <!-- footer -->
-   <section class="footer">
+  <section class="footer">
     <section class="footer-top" id='footer'>
       <section class="footer-left">
         <div class="logo">
@@ -358,8 +358,12 @@
             <img src="./images/bywindLogo.png" alt="">
             <h3>隨風而來</h3>
           </a>
-          <a href="#"><h3>聯絡我們</h3></a>
-          <a href="#"><h3>常見問題</h3></a>
+          <a href="#">
+            <h3>聯絡我們</h3>
+          </a>
+          <a href="#">
+            <h3>常見問題</h3>
+          </a>
         </div>
       </section>
       <section class="footer-middle">
@@ -369,52 +373,82 @@
 客戶回饋
 商品
 服務 -->
-         <div class="row align-items-center" style="margin-top:2rem; margin-left:1rem;">
+        <div class="row align-items-center" style="margin-top:2rem; margin-left:1rem;">
           <div class="col footer-nav">
             <h3>預約占卜</h3>
             <ul>
-              <a href=""><li>link</li></a>
-              <a href=""><li>link</li></a>
-              <a href=""><li>link</li></a>
+              <a href="">
+                <li>link</li>
+              </a>
+              <a href="">
+                <li>link</li>
+              </a>
+              <a href="">
+                <li>link</li>
+              </a>
             </ul>
           </div>
 
           <div class="col footer-nav">
             <h3>牌義 • 教學</h3>
             <ul>
-              <a href=""><li>link</li></a>
-              <a href=""><li>link</li></a>
-              <a href=""><li>link</li></a>
+              <a href="">
+                <li>link</li>
+              </a>
+              <a href="">
+                <li>link</li>
+              </a>
+              <a href="">
+                <li>link</li>
+              </a>
             </ul>
           </div>
 
           <div class="col footer-nav">
             <h3>商品</h3>
             <ul>
-              <a href=""><li>link</li></a>
-              <a href=""><li>link</li></a>
-              <a href=""><li>link</li></a>
+              <a href="">
+                <li>link</li>
+              </a>
+              <a href="">
+                <li>link</li>
+              </a>
+              <a href="">
+                <li>link</li>
+              </a>
             </ul>
           </div>
 
           <div class="col footer-nav">
             <h3>服務</h3>
             <ul>
-              <a href=""><li>link</li></a>
-              <a href=""><li>link</li></a>
-              <a href=""><li>link</li></a>
+              <a href="">
+                <li>link</li>
+              </a>
+              <a href="">
+                <li>link</li>
+              </a>
+              <a href="">
+                <li>link</li>
+              </a>
             </ul>
           </div>
 
           <div class="col footer-nav">
             <h3>預約占卜</h3>
             <ul>
-              <a href=""><li>link</li></a>
-              <a href=""><li>link</li></a>
-              <a href=""><li>link</li></a>
+              <a href="">
+                <li>link</li>
+              </a>
+              <a href="">
+                <li>link</li>
+              </a>
+              <a href="">
+                <li>link</li>
+              </a>
             </ul>
           </div>
-         </div>
+        </div>
 
         <!-- end of php foreach -->
       </section>
@@ -424,76 +458,46 @@
     <hr class='footer-hr'>
 
     <section class="footer-bottom">
-        <section class='sign-up'>
-            <p style="margin-right:20px;">免費註冊！！:</p>
-            <button>Sign Up</button>
-        </section>
-
-
-        <hr class='footer-hr'>
-        <!-- Section: Social Media -->
-        <section class="social-media">
-          <!-- Facebook -->
-          <a
-            class="btn btn-outline-light rounded-circle m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-facebook-f"></i
-            ></a>
-
-          <!-- Twitter -->
-          <a
-            class="btn btn-outline-light rounded-circle m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-twitter"></i
-            ></a>
-
-          <!-- Google -->
-          <a
-            class="btn btn-outline-light rounded-circle m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-google"></i
-            ></a>
-
-          <!-- Instagram -->
-          <a
-            class="btn btn-outline-light rounded-circle m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-instagram"></i
-            ></a>
-
-          <!-- Linkedin -->
-          <a
-            class="btn btn-outline-light rounded-circle m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-linkedin-in"></i
-            ></a>
-
-          <!-- Github -->
-          <a
-            class="btn btn-outline-light rounded-circle m-1"
-            href="#!"
-            role="button"
-            ><i class="fab fa-github"></i
-            ></a>
-        </section>
-        <!--End of Section: Social media -->
-          <section class="copyright">
-            © 2024 Copyright: Michael Zhan
-          </section>
+      <section class='sign-up'>
+        <p style="margin-right:20px;">免費註冊！！:</p>
+        <button>Sign Up</button>
       </section>
+
+
+      <hr class='footer-hr'>
+      <!-- Section: Social Media -->
+      <section class="social-media">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light rounded-circle m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light rounded-circle m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light rounded-circle m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light rounded-circle m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light rounded-circle m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light rounded-circle m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!--End of Section: Social media -->
+      <section class="copyright">
+        © 2024 Copyright: Michael Zhan
+      </section>
+    </section>
   </section>
 
   <!-- top fixed circle -->
-   <a href="#">
+  <a href="#">
     <div class="top-container">
       <h3 class="top-text">top</h3>
     </div>
-   </a>
+  </a>
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
   <script src="./script/stickyNavigation.js"></script>
 </body>
