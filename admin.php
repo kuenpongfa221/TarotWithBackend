@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./script/opcl.js"></script>
     <style>
         * {
             box-sizing: border-box;
@@ -88,8 +90,8 @@
         }
 
         .main {
-            margin-left: 312px;
-            margin-top: 12vh;
+            margin-left: 332px;
+            margin-top: calc(12vh + 20px);
             /* Same as the width of the sidenav */
             font-size: 28px;
             /* Increased text to enable scrolling */
@@ -110,6 +112,16 @@
 </head>
 
 <body>
+    <!-- Modal container -->
+    <div id="cover" style="display:none; ">
+        <div id="coverr">
+            <a style="position:absolute; right:3px; top:4px; cursor:pointer; z-index:9999;" onclick="cl(&#39;#cover&#39;)">X</a>
+            <div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;">
+
+            </div>
+        </div>
+    </div>
+
     <!-- Top Bar -->
     <section class="topbar">
         <div class="logo">
@@ -131,17 +143,11 @@
         <a href="?do=testimonials">客戶回饋管理</a>
         <a href="?do=product">商品管理</a>
         <a href="?do=service">服務管理</a>
+        <a href="?do=footer">footer管理</a>
     </div>
     <!-- end of sidenav -->
 
     <div class="main">
-        <!-- <h2>Sidebar</h2> -->
-        <!-- <p>This sidebar is of full height (100%) and always shown.</p> -->
-        <!-- <p>Scroll down the page to see the result.</p> -->
-        <!-- <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p> -->
-        <!-- <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p> -->
-        <!-- <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p> -->
-        <!-- <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p> -->
         <?php
         $do = $_GET['do']  ?? 'reserve';
         $file = "./backend/$do.php";
