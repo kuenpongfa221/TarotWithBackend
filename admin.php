@@ -33,7 +33,11 @@
             display: flex;
         }
 
-        .topbar>.logo {
+        .topbar>a {
+            color: black
+        }
+
+        .topbar>a>.logo {
             width: 312px;
             height: 100%;
             background-color: khaki;
@@ -125,10 +129,12 @@
 
     <!-- Top Bar -->
     <section class="topbar">
-        <div class="logo">
-            <img src="./images/bywindLogo.png" alt="">
-            <h3>隨風而來</h3>
-        </div>
+        <a href="#">
+            <div class="logo">
+                <img src="./images/bywindLogo.png" alt="">
+                <h3>隨風而來</h3>
+            </div>
+        </a>
         <div class="topbar-main">
             <div class="main-container"> <i class="ri-menu-line"></i></div>
 

@@ -405,6 +405,21 @@
           </div>
 
           <div class="col footer-nav">
+            <h3>客戶回饋</h3>
+            <ul>
+              <a href="">
+                <li>link</li>
+              </a>
+              <a href="">
+                <li>link</li>
+              </a>
+              <a href="">
+                <li>link</li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="col footer-nav">
             <h3>商品</h3>
             <ul>
               <a href="">
@@ -421,21 +436,6 @@
 
           <div class="col footer-nav">
             <h3>服務</h3>
-            <ul>
-              <a href="">
-                <li>link</li>
-              </a>
-              <a href="">
-                <li>link</li>
-              </a>
-              <a href="">
-                <li>link</li>
-              </a>
-            </ul>
-          </div>
-
-          <div class="col footer-nav">
-            <h3>預約占卜</h3>
             <ul>
               <a href="">
                 <li>link</li>
