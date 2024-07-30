@@ -28,19 +28,39 @@ $db = ${ucfirst($do)};
 $row = $db->find($_POST['id']);
 if (!empty($_FILES['img']['tmp_name'])) {
 
-    if ($do == 'reserve') {
-        move_uploaded_file($_FILES['img']['tmp_name'], "../images/tarotsSection/" . $_FILES['img']['name']);
-    } else {
-        move_uploaded_file($_FILES['img']['tmp_name'], "../images/" . $_FILES['img']['name']);
+    switch ($do) {
+        case 'reserves':
+            move_uploaded_file($_FILES['img']['tmp_name'], "../images/tarotsSection/" . $_FILES['img']['name']);
+            break;
+        case 'cardmeanings':
+            move_uploaded_file($_FILES['img']['tmp_name'], "../images/cardMeaning/" . $_FILES['img']['name']);
+            break;
     }
+    // if ($do == 'reserve') {
+    //     move_uploaded_file($_FILES['img']['tmp_name'], "../images/tarotsSection/" . $_FILES['img']['name']);
+    // } else {
+    //     move_uploaded_file($_FILES['img']['tmp_name'], "../images/" . $_FILES['img']['name']);
+    // }
     $row['img'] = $_FILES['img']['name'];
 }
 
-if (!empty($_POST['title'])) {
-    $row['title'] = $_POST['title'];
-}
-if (!empty($_POST['btnText'])) {
-    $row['btnText'] = $_POST['btnText'];
+switch ($do) {
+    case "reserves":
+        if (!empty($_POST['title'])) {
+            $row['title'] = $_POST['title'];
+        }
+        if (!empty($_POST['btnText'])) {
+            $row['btnText'] = $_POST['btnText'];
+        }
+        break;
+    case 'cardmeanings':
+        if (!empty($_POST['title'])) {
+            $row['title'] = $_POST['title'];
+        }
+        if (!empty($_POST['contents'])) {
+            $row['contents'] = $_POST['contents'];
+        }
+        break;
 }
 
 $db->save($row);

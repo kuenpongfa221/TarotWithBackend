@@ -5,11 +5,20 @@ $db = ${ucfirst($do)};
 
 if (!empty($_FILES['img']['tmp_name'])) {
 
-    if ($do == "reserve") {
-        move_uploaded_file($_FILES['img']['tmp_name'], "../images/tarotsSection/" . $_FILES['img']['name']);
-    } else {
-        move_uploaded_file($_FILES['img']['tmp_name'], "../images/" . $_FILES['img']['name']);
+    echo $do;
+    switch ($do) {
+        case "reserves":
+            move_uploaded_file($_FILES['img']['tmp_name'], "../images/tarotsSection/" . $_FILES['img']['name']);
+            break;
+        case "cardmeanings":
+            move_uploaded_file($_FILES['img']['tmp_name'], "../images/cardMeaning/" . $_FILES['img']['name']);
+            break;
     }
+
+    // if ($do == "reserve") {
+    // } else {
+    //     move_uploaded_file($_FILES['img']['tmp_name'], "../images/" . $_FILES['img']['name']);
+    // }
 
     $_POST['img'] = $_FILES['img']['name'];
 }

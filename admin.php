@@ -146,7 +146,7 @@
     <!-- sidenav -->
     <div class="sidenav">
         <a href="?do=reserve">預約占卜管理</a>
-        <a href="?do=cardMeaning">牌義 • 教學管理</a>
+        <a href="?do=cardmeanings">牌義 • 教學管理</a>
         <a href="?do=testimonials">客戶回饋管理</a>
         <a href="?do=product">商品管理</a>
         <a href="?do=service">服務管理</a>
@@ -156,7 +156,7 @@
 
     <div class="main">
         <?php
-        $do = $_GET['do']  ?? 'reserve';
+        $do = $_GET['do']  ?? 'reserves';
         $file = "./backend/$do.php";
         if (file_exists($file)) {
             include_once($file);

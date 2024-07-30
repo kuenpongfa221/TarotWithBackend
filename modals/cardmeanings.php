@@ -59,12 +59,12 @@
             <td><input type="text" name="title" id="title" class='input-form'></td>
         </tr>
         <tr>
-            <td class="title-form">按鈕文字：</td>
-            <td><input type="text" name="btnText" id="btnText" class='input-form'></td>
+            <td class="title-form">內文文字：</td>
+            <td><input type="text" name="contents" id="contents" class='input-form'></td>
         </tr>
         <tr>
             <td>
-                <input type="hidden" name="table" value='reserve'>
+                <input type="hidden" name="table" value='cardmeanings'>
                 <input type="submit" value="新增" class="btn-end-form">
                 <input type="reset" value="重置" class="btn-end-form">
             </td>

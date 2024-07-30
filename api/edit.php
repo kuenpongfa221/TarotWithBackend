@@ -18,6 +18,9 @@ foreach ($_POST['id'] as $key => $id) {
                 $row['sh'] = (isset($_POST['sh']) && (in_array($id, $_POST['sh']))) ? 1 : 0;
                 // echo (strval($id) == $_POST['sh']) ? 'right' : 'false';
                 break;
+            case 'cardmeanings':
+                $row['sh'] = (isset($_POST['sh']) && (in_array($id, $_POST['sh']))) ? 1 : 0;
+                break;
         }
         // dd($row);
         $db->save($row);

@@ -122,4 +122,9 @@ function to($url)
     header("location:$url");
 }
 
-$Reserve = new DB('reserves');
+$Reserves = new DB('reserves');
+$Cardmeanings = new DB('cardmeanings');
+$Testimonials = new DB('testimonials');
+$Products = new DB('products');
+$Services = new DB('services');
+$Footers = new DB('footers');
