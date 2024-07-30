@@ -17,8 +17,8 @@ VALUES
         '塔羅，遇見你的內在天賦之旅',
         '立即預約占卜',
         '1'
-    )
+    );
 INSERT INTO
     `reserves` (`id`, `img`, `title`, `btnText`, `sh`)
 VALUES
-    (NULL, 'tarot-2', '塔羅，遇見更好的自己', '立即預約占卜', '0');
+    (NULL, 'tarot-2.jpg', '塔羅，遇見更好的自己', '立即預約占卜', '0');
