@@ -321,7 +321,7 @@
 
         <div class="col-4 card-col">
           <div class="card" style="width:200px">
-            <img class="card-img  bg-transparent" src="./images/services/ziWei.webp" alt="Card image" style="width:100%">
+            <img class="card-img  bg-transparent" src="./images/service/ziWei.webp" alt="Card image" style="width:100%">
             <div class="card-body card-img-overlay d-flex justify-content-center flex-column">
               <div class="bg-darkgray">
                 <h4 class="card-title">紫微斗數</h4>
@@ -334,7 +334,7 @@
 
         <div class="col-4 card-col">
           <div class="card" style="width:200px">
-            <img class="card-img  bg-transparent" src="./images/services/name-1.jpeg" alt="Card image" style="width:100%">
+            <img class="card-img  bg-transparent" src="./images/service/name-1.jpeg" alt="Card image" style="width:100%">
             <div class="card-body card-img-overlay d-flex justify-content-center flex-column">
               <div class="bg-darkgray">
                 <h4 class="card-title">姓名學</h4>

@@ -38,6 +38,12 @@ if (!empty($_FILES['img']['tmp_name'])) {
         case 'testimonials':
             move_uploaded_file($_FILES['img']['tmp_name'], "../images/testimonials/" . $_FILES['img']['name']);
             break;
+        case 'product':
+            move_uploaded_file($_FILES['img']['tmp_name'], "../images/testimonials/" . $_FILES['img']['name']);
+            break;
+        case 'service':
+            move_uploaded_file($_FILES['img']['tmp_name'], "../images/testimonials/" . $_FILES['img']['name']);
+            break;
     }
     // if ($do == 'reserve') {
     //     move_uploaded_file($_FILES['img']['tmp_name'], "../images/tarotsSection/" . $_FILES['img']['name']);
@@ -70,6 +76,22 @@ switch ($do) {
         }
         if (!empty($_POST['jbTitle'])) {
             $row['jbTitle'] = $_POST['jbTitle'];
+        }
+        if (!empty($_POST['contents'])) {
+            $row['contents'] = $_POST['contents'];
+        }
+        break;
+    case 'product':
+        if (!empty($_POST['title'])) {
+            $row['title'] = $_POST['title'];
+        }
+        if (!empty($_POST['contents'])) {
+            $row['contents'] = $_POST['contents'];
+        }
+        break;
+    case 'service':
+        if (!empty($_POST['title'])) {
+            $row['title'] = $_POST['title'];
         }
         if (!empty($_POST['contents'])) {
             $row['contents'] = $_POST['contents'];

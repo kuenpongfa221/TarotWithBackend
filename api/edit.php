@@ -27,6 +27,9 @@ foreach ($_POST['id'] as $key => $id) {
             case 'product':
                 $row['sh'] = (isset($_POST['sh']) && (in_array($id, $_POST['sh']))) ? 1 : 0;
                 break;
+            case 'service':
+                $row['sh'] = (isset($_POST['sh']) && (in_array($id, $_POST['sh']))) ? 1 : 0;
+                break;
         }
         // dd($row);
         $db->save($row);

@@ -126,5 +126,5 @@ $Reserves = new DB('reserves');
 $Cardmeanings = new DB('cardmeanings');
 $Testimonials = new DB('testimonials');
 $Product = new DB('products');
-$Services = new DB('services');
+$Service = new DB('services');
 $Footers = new DB('footers');

@@ -19,6 +19,9 @@ if (!empty($_FILES['img']['tmp_name'])) {
         case "product":
             move_uploaded_file($_FILES['img']['tmp_name'], "../images/product/" . $_FILES['img']['name']);
             break;
+        case "service":
+            move_uploaded_file($_FILES['img']['tmp_name'], "../images/service/" . $_FILES['img']['name']);
+            break;
     }
 
     // if ($do == "reserve") {
