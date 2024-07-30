@@ -30,6 +30,9 @@ foreach ($_POST['id'] as $key => $id) {
             case 'service':
                 $row['sh'] = (isset($_POST['sh']) && (in_array($id, $_POST['sh']))) ? 1 : 0;
                 break;
+            case 'footer':
+                $row['sh'] = (isset($_POST['sh']) && (in_array($id, $_POST['sh']))) ? 1 : 0;
+                break;
         }
         // dd($row);
         $db->save($row);

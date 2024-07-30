@@ -127,4 +127,4 @@ $Cardmeanings = new DB('cardmeanings');
 $Testimonials = new DB('testimonials');
 $Product = new DB('products');
 $Service = new DB('services');
-$Footers = new DB('footers');
+$Footer = new DB('footers');
