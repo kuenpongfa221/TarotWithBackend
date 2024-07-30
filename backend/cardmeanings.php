@@ -98,7 +98,7 @@
                     <td class="td-center" width='25%'><img src="./images/cardMeaning/<?= $row['img'] ?>" alt=""></td>
                     <td class="td-center" width='17%'><span><?= $row['title'] ?></span></td>
                     <td class="td-center" width='26%'><span><?= $row['contents'] ?></span></td>
-                    <td class="td-center" width='7%'><input type="radio" name="sh[]" value="<?= $row['id'] ?>" <?= ($row['sh'] == '1') ? "checked" : "" ?>></td>
+                    <td class="td-center" width='7%'><input type="checkbox" name="sh[]" value="<?= $row['id'] ?>" <?= ($row['sh'] == '1') ? "checked" : "" ?>></td>
                     <td class="td-center" width=' 7%'><input type="checkbox" name="del[]" id="del" value="<?= $row['id'] ?>"></td>
                     <td class="td-center"><button type="button" class='button-style' onclick="op('#cover','#cvr','./modals/<?= $do; ?>_update.php?id=<?= $row['id']; ?>')">更換圖片與文字</button></td>
                     <input type="hidden" name="id[]" value="<?= $row['id']; ?>">

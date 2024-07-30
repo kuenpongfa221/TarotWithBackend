@@ -45,26 +45,30 @@
     }
 </style>
 
-<h3 class='cent'>新增牌義區圖片與文字</h3>
+<h3 class='cent'>新增客戶回饋區評論</h3>
 <hr>
 
 <form action="./api/add.php" method="post" enctype="multipart/form-data">
     <table>
         <tr>
-            <td class="title-form">圖片：</td>
+            <td class="title-form">大頭貼：</td>
             <td><input type="file" name="img" id="img" class='input-form'></td>
         </tr>
         <tr>
-            <td class="title-form">標題文字：</td>
-            <td><input type="text" name="title" id="title" class='input-form'></td>
+            <td class="title-form">暱稱：</td>
+            <td><input type="text" name="name" id="name" class='input-form'></td>
         </tr>
         <tr>
-            <td class="title-form">內文文字：</td>
+            <td class="title-form">職稱：</td>
+            <td><input type="text" name="jbTitle" id="jbTitle" class='input-form'></td>
+        </tr>
+        <tr>
+            <td class="title-form">內文：</td>
             <td><input type="text" name="contents" id="contents" class='input-form'></td>
         </tr>
         <tr>
             <td>
-                <input type="hidden" name="table" value='cardmeanings'>
+                <input type="hidden" name="table" value='testimonials'>
                 <input type="submit" value="新增" class="btn-end-form">
                 <input type="reset" value="重置" class="btn-end-form">
             </td>

@@ -13,6 +13,9 @@ if (!empty($_FILES['img']['tmp_name'])) {
         case "cardmeanings":
             move_uploaded_file($_FILES['img']['tmp_name'], "../images/cardMeaning/" . $_FILES['img']['name']);
             break;
+        case "testimonials":
+            move_uploaded_file($_FILES['img']['tmp_name'], "../images/testimonials/" . $_FILES['img']['name']);
+            break;
     }
 
     // if ($do == "reserve") {

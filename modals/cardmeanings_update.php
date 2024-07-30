@@ -45,7 +45,7 @@
     }
 </style>
 
-<h3 class='cent'>新增標題區圖片</h3>
+<h3 class='cent'>修改牌義區圖片與文字</h3>
 <hr>
 
 <form action="./api/update.php" method="post" enctype="multipart/form-data">
