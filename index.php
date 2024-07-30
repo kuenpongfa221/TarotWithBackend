@@ -269,7 +269,7 @@
           <!-- <h2>Card Image</h2>
             <p>Image at the top (card-img-top):</p> -->
           <div class="card" style="width:200px">
-            <img class="card-img-top" src="./images/products/crystal-1.avif" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="./images/product/crystal-1.avif" alt="Card image" style="width:100%">
             <div class="card-body">
               <h4 class="card-title">黑髮晶銀曜石白水晶手錬</h4>
               <p class="card-text">Some example text. John Doe is an architect</p>
@@ -280,7 +280,7 @@
 
         <div class="col-4 card-col">
           <div class="card" style="width:200px">
-            <img class="card-img-top" src="./images/products/magicCandle.png" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="./images/product/magicCandle.png" alt="Card image" style="width:100%">
             <div class="card-body">
               <h4 class="card-title">魔法蠟燭</h4>
               <p class="card-text">Some example text. John Doe is an architect</p>
@@ -291,7 +291,7 @@
 
         <div class="col-4 card-col">
           <div class="card" style="width:200px">
-            <img class="card-img-top" src="./images/products/incense.jpg" alt="Card image" style="width:100%">
+            <img class="card-img-top" src="./images/product/incense.jpg" alt="Card image" style="width:100%">
             <div class="card-body">
               <h4 class="card-title">移動式無線擴香儀</h4>
               <p class="card-text">Some example text. John Doe is an architect</p>

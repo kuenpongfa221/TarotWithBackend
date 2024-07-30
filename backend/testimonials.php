@@ -1,76 +1,70 @@
 <?php include_once "./api/base.php"; ?>
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>預約占卜管理</title>
 
-    <style>
-        .td-color {
-            background-color: lightsalmon;
+<style>
+    .td-color {
+        background-color: lightsalmon;
 
-        }
+    }
 
-        .td-center {
-            text-align: center;
-        }
+    .td-center {
+        text-align: center;
+    }
 
-        .table-width {
-            width: 60vw;
-        }
+    .table-width {
+        width: 60vw;
+    }
 
-        .input-width {
-            width: 100%;
-            height: 10vh;
-        }
+    .input-width {
+        width: 100%;
+        height: 10vh;
+    }
 
-        td>img {
-            width: 100%;
-        }
+    td>img {
+        width: 100%;
+    }
 
-        .top {
-            width: 60vw;
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: end;
-        }
+    .top {
+        width: 60vw;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
 
-        .addBtn-style {
-            width: 120px;
-            height: 60px;
-            font-size: 1rem;
-            border-radius: 10%;
-            background-color: dodgerblue;
-            color: white;
-            cursor: pointer;
-        }
+    .addBtn-style {
+        width: 120px;
+        height: 60px;
+        font-size: 1rem;
+        border-radius: 10%;
+        background-color: dodgerblue;
+        color: white;
+        cursor: pointer;
+    }
 
-        .addBtn-style:hover {
-            transition: all .3s ease;
-            background-color: #1666b5;
-        }
+    .addBtn-style:hover {
+        transition: all .3s ease;
+        background-color: #1666b5;
+    }
 
-        .button-style {
-            width: 120px;
-            height: 60px;
-            font-size: 1rem;
-            border-radius: 10%;
-            background-color: teal;
-            color: white;
-            cursor: pointer;
+    .button-style {
+        width: 120px;
+        height: 60px;
+        font-size: 1rem;
+        border-radius: 10%;
+        background-color: teal;
+        color: white;
+        cursor: pointer;
 
-        }
+    }
 
-        .button-style:hover {
-            transition: all .3s ease;
-            background-color: #004545;
-        }
-    </style>
-</head>
+    .button-style:hover {
+        transition: all .3s ease;
+        background-color: #004545;
+    }
+</style>
+
 
 <body>
     <section class="top">
@@ -113,5 +107,3 @@
         <input class='button-style' type="submit" value="修改確定">
         <input class='button-style' type="reset" value="重置">
     </form>
-
-</html>
