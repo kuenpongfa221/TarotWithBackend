@@ -13,7 +13,7 @@ foreach ($_POST['id'] as $key => $id) {
         $row = $db->find($id);
 
         switch ($do) {
-            case 'reserve':
+            case 'reserves':
                 // $row['sh'] = (isset($_POST['sh']) && (strval($id) == $_POST['sh'])) ? 1 : 0;
                 $row['sh'] = (isset($_POST['sh']) && (in_array($id, $_POST['sh']))) ? 1 : 0;
                 // echo (strval($id) == $_POST['sh']) ? 'right' : 'false';

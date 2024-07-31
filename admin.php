@@ -145,7 +145,7 @@
 
     <!-- sidenav -->
     <div class="sidenav">
-        <a href="?do=reserve">預約占卜管理</a>
+        <a href="?do=reserves">預約占卜管理</a>
         <a href="?do=cardmeanings">牌義 • 教學管理</a>
         <a href="?do=testimonials">客戶回饋管理</a>
         <a href="?do=product">商品管理</a>

@@ -130,6 +130,10 @@ a {
   justify-content: center;
   align-items: center;
 }
+.img-container > img{
+  width:100%;
+  object-position: 50% 50%;
+}
 .img-container > h2 {
   color: #eee;
   font-size: 3.5rem;

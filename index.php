@@ -1,3 +1,4 @@
+<?php include_once "./api/base.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,11 +40,24 @@
       <span class="et-hero-tab-slider"></span>
     </div>
     <!-- background-image -->
-    <div class="img-container" id="tab-reserve">
-      <h2>塔羅，遇見你的內在天賦之旅</h2>
-      <!-- <img src="./images/tarotHeroSec.jpg" alt=""> -->
-      <button id="reserveBtn">立即預約占卜</button>
-    </div>
+    <!-- <div class="img-container" id="tab-reserve"> -->
+    <!-- <h2>塔羅，遇見你的內在天賦之旅</h2> -->
+    <!-- <img src="./images/tarotHeroSec.jpg" alt=""> -->
+    <!-- <button id="reserveBtn">立即預約占卜</button> -->
+    <!-- </div> -->
+    <?php
+    $rows = $Reserves->all(['sh' => '1']);
+    foreach ($rows as $row) {
+    ?>
+      <div class="img-container" id="tab-reserve" data-img-src="<?= $row['img'] ?>">
+        <!-- <img src="./images//tarotsSection/tarotHeroSec.jpg" alt=""> -->
+        <h2><?= $row['title'] ?></h2>
+        <!-- <img src="./images/tarotHeroSec.jpg" alt=""> -->
+        <button id="reserveBtn"><?= $row['btnText'] ?></button>
+      </div>
+    <?php
+    }
+    ?>
   </section>
 
   <!-- Main -->
@@ -500,6 +514,16 @@
   </a>
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
   <script src="./script/stickyNavigation.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      const imgName = $(".img-container").data('img-src');
+      $(".img-container").css('backgroundImage',
+        `linear-gradient(rgba(70, 70, 70, 0.8), rgba(70, 70, 70, 0.8)),url("./images/tarotsSection/${imgName}")`)
+    })
+  </script>
 </body>
+
+
 
 </html>
