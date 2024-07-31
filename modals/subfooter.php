@@ -1,3 +1,35 @@
+<style>
+    .subfooter-input {
+        width: 200px;
+        border: #999 1px solid;
+        border-radius: 3px;
+        background: #EFEFEF;
+        padding: 5px;
+        margin: 3px;
+        font-size: 1rem;
+    }
+
+    .subfooter-button {
+        width: 80px;
+        height: 30px;
+        border: 1px black solid;
+        border-radius: 4px;
+        margin: 5px;
+        cursor: pointer;
+        background-color: #EFEFEF;
+        transition: all 0.2s ease;
+    }
+
+    .subfooter-button:hover {
+        width: 80px;
+        height: 30px;
+        border: 1px black solid;
+        border-radius: 4px;
+        margin: 5px;
+        background-color: #c7c7c7;
+    }
+</style>
+
 <?php include_once "../api/base.php"; ?>
 <h3 class='cent'>編輯次選單</h3>
 <hr>
@@ -13,8 +45,8 @@
         foreach ($rows as $row) {
         ?>
             <tr>
-                <td><input type="text" name="title[]" value="<?= $row['title']; ?>"></td>
-                <td><input type="text" name="href[]" value="<?= $row['href']; ?>"></td>
+                <td><input class="subfooter-input" type="text" name="title[]" value="<?= $row['title']; ?>"></td>
+                <td><input class="subfooter-input" type="text" name="href[]" value="<?= $row['href']; ?>"></td>
                 <td><input type="checkbox" name="del[]" value="<?= $row['id']; ?>"></td>
                 <input type="hidden" name="id[]" value="<?= $row['id']; ?>">
             </tr>
@@ -25,9 +57,9 @@
     <div style="text-align:center">
         <input type="hidden" name="table" value='footer'>
         <input type="hidden" name="main_id" value="<?= $_GET['id']; ?>">
-        <input type="submit" value="修改確定">
-        <input type="reset" value="重置">
-        <input type="button" value="更多次選單" onclick="addSub()">
+        <input class="subfooter-button" type="submit" value="修改確定">
+        <input class="subfooter-button" type="reset" value="重置">
+        <input class="subfooter-button" type="button" value="更多次選單" onclick="addSub()">
     </div>
 </form>
 <script>

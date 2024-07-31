@@ -27,7 +27,7 @@
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: #ddd;
+            /* background-color: #ddd; */
             overflow-x: hidden;
 
             display: flex;
@@ -40,12 +40,15 @@
         .topbar>a>.logo {
             width: 312px;
             height: 100%;
-            background-color: khaki;
+            /* background-color: khaki; */
 
             display: flex;
             justify-content: start;
             align-items: center;
             padding-left: 30px;
+
+            border-bottom: 1px solid #eee;
+            border-right: 1px solid #eee;
         }
 
         .logo>img {
@@ -55,7 +58,8 @@
         .topbar>.topbar-main {
             width: calc(100% - 312px);
             height: 100%;
-            background-color: teal;
+            /* background-color: teal; */
+            background-color: white;
         }
 
         .topbar-main>.main-container {
@@ -77,7 +81,7 @@
             z-index: 1;
             top: 12vh;
             left: 0;
-            background-color: #111;
+            /* background-color: #111; */
             overflow-x: hidden;
             padding-top: 20px;
         }
@@ -91,16 +95,23 @@
         }
 
         .sidenav a:hover {
-            color: #f1f1f1;
+            transition: all 0.3s ease;
+            color: black;
+            background-color: aquamarine;
+            border-radius: 10px;
+            margin-left: 8px;
+            margin-right: 8px;
         }
 
         .main {
-            margin-left: 332px;
-            margin-top: calc(12vh + 20px);
-            /* Same as the width of the sidenav */
+            margin-left: 312px;
+            margin-top: calc(12vh);
+            padding-top: 10px;
+            padding-left: 30px;
+
+            min-Height: 85vh;
+            background-color: #f4f4f4;
             font-size: 28px;
-            /* Increased text to enable scrolling */
-            padding: 0px 10px;
         }
 
         @media screen and (max-height: 450px) {

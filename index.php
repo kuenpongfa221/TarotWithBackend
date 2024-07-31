@@ -22,14 +22,25 @@
 </head>
 
 <body>
+  <style>
+    .index-top-bar {
+      display: flex;
+    }
+  </style>
   <!-- Hero -->
   <!-- 預約占卜 -->
   <section class="et-hero-tabs">
     <!-- <h1>STICKY SLIDER NAV</h1> -->
-    <div class="logo">
-      <a href="#" class='header-logo-a-tag'>
-        <img src="./images/bywindLogo.png" alt="">
-      </a>
+    <div class="index-top-bar">
+      <div class="logo">
+        <a href="#" class='header-logo-a-tag'>
+          <img src="./images/bywindLogo.png" alt="">
+        </a>
+      </div>
+      <div class="button-container">
+        <button>登入</button>
+      </div>
+
     </div>
     <div class="et-hero-tabs-container">
       <a class="et-hero-tab" href="#tab-reserve">預約占卜</a>
@@ -64,212 +75,67 @@
   <main class="et-main">
     <!-- 牌義 • 教學 -->
     <section class="et-slide container-fluid" id="tab-card-meaning">
-      <!-- <h1>ES6</h1>
-      <h3>something about es6</h3> -->
-      <!-- <div class="container-fluid"> -->
       <div class="row justify-content-center">
 
-        <div class="col-4 card-col">
-          <!-- <h2>Card Image</h2>
+        <?php
+        $rows = $Cardmeanings->all(['sh' => 1]);
+        foreach ($rows as $row) {
+        ?>
+          <div class="col-4 card-col">
+            <!-- <h2>Card Image</h2>
             <p>Image at the top (card-img-top):</p> -->
-          <div class="card" style="width:200px">
-            <img class="card-img-top" src="./images/tarots/rws_tarot_00_fool.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">愚人</h4>
-              <p class="card-text">Some example text. John Doe is an architect</p>
-              <a href="#tab-es6" class="btn btn-primary">See Profile</a>
+            <div class="card" style="width:200px">
+              <img class="card-img-top" src="./images/tarots/<?= $row['img'] ?>" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title"><?= $row['title'] ?></h4>
+                <p class="card-text"><?= $row['contents'] ?></p>
+                <a href="#tab-es6" class="btn btn-primary">See Profile</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-4 card-col">
-          <!-- <h2>Card Image</h2>
-            <p>Image at the top (card-img-top):</p> -->
-          <div class="card" style="width:200px">
-            <img class="card-img-top" src="./images/tarots/rws_tarot_02_high_priestess.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">女祭司</h4>
-              <p class="card-text">Some example text. John Doe is an architect</p>
-              <a href="#tab-es6" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 card-col">
-          <!-- <h2>Card Image</h2>
-            <p>Image at the top (card-img-top):</p> -->
-          <div class="card" style="width:200px">
-            <img class="card-img-top" src="./images/tarots/cups01.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">聖杯 王牌</h4>
-              <p class="card-text">Some example text. John Doe is an architect</p>
-              <a href="#tab-es6" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="col-4">456</div>
-          <div class="col-4">789</div> -->
+        <?php
+        }
+        ?>
+
       </div>
-      <!-- </div> -->
     </section>
 
     <!-- 客戶回饋 -->
     <section class="et-slide" id="tab-testimonials">
       <h1>客戶回饋</h1>
       <div class="row gy-5 gx-4">
-        <div class="col-sm-6 col-lg-4" data-aos="fade-down" data-aos-delay="150">
-          <div class="review">
-            <div class="review-head p-4 bg-white theme-shadow">
-              <div class="text-warning">
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
+        <?php
+        $rows = $Testimonials->all(['sh' => 1]);
+        foreach ($rows as $row) {
+        ?>
+          <div class="col-sm-6 col-lg-4" data-aos="fade-down" data-aos-delay="150">
+            <div class="review">
+              <div class="review-head p-4 bg-white theme-shadow">
+                <div class="text-warning">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <p>
+                  <?= $row['contents'] ?>
+                </p>
               </div>
-              <p>
-                Amazing theme ipsum dolor sit amet consectetur adipisicing
-                elit. Assumenda eum animi rerum ipsam impedit dicta
-                voluptatem.
-              </p>
-            </div>
-            <div class="review-person mt-4 d-flex align-items-center">
-              <img class="rounded-circle" src="./images/avatar-1.jpg" alt="" />
-              <div class="  ">
-                <h5>Dianne Russell</h5>
-                <small>UX Architect</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="150">
-          <div class="review">
-            <div class="review-head p-4 bg-white theme-shadow">
-              <div class="text-warning">
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-              </div>
-              <p>
-                Amazing theme ipsum dolor sit amet consectetur adipisicing
-                elit. Assumenda eum animi rerum ipsam impedit dicta
-                voluptatem.
-              </p>
-            </div>
-            <div class="review-person mt-4 d-flex align-items-center">
-              <img class="rounded-circle" src="./images/avatar-1.jpg" alt="" />
-              <div class="  ">
-                <h5>Dianne Russell</h5>
-                <small>UX Architect</small>
+              <div class="review-person mt-4 d-flex align-items-center">
+                <div class='review-img-container'>
+                  <img class="rounded-circle" src="./images/testimonials/<?= $row['img'] ?>" alt="" />
+                </div>
+                <div class="  ">
+                  <h5 style="margin-left: 5px;"><?= $row['name'] ?></h5>
+                  <small><?= $row['jbTitle'] ?></small>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="150">
-          <div class="review">
-            <div class="review-head p-4 bg-white theme-shadow">
-              <div class="text-warning">
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-              </div>
-              <p>
-                Amazing theme ipsum dolor sit amet consectetur adipisicing
-                elit. Assumenda eum animi rerum ipsam impedit dicta
-                voluptatem.
-              </p>
-            </div>
-            <div class="review-person mt-4 d-flex align-items-center">
-              <img class="rounded-circle" src="./images/avatar-1.jpg" alt="" />
-              <div class="  ">
-                <h5>Dianne Russell</h5>
-                <small>UX Architect</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="150">
-          <div class="review">
-            <div class="review-head p-4 bg-white theme-shadow">
-              <div class="text-warning">
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-              </div>
-              <p>
-                Amazing theme ipsum dolor sit amet consectetur adipisicing
-                elit. Assumenda eum animi rerum ipsam impedit dicta
-                voluptatem.
-              </p>
-            </div>
-            <div class="review-person mt-4 d-flex align-items-center">
-              <img class="rounded-circle" src="./images/avatar-1.jpg" alt="" />
-              <div class="  ">
-                <h5>Dianne Russell</h5>
-                <small>UX Architect</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4" data-aos="fade-down" data-aos-delay="150">
-          <div class="review">
-            <div class="review-head p-4 bg-white theme-shadow">
-              <div class="text-warning">
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-              </div>
-              <p>
-                Amazing theme ipsum dolor sit amet consectetur adipisicing
-                elit. Assumenda eum animi rerum ipsam impedit dicta
-                voluptatem.
-              </p>
-            </div>
-            <div class="review-person mt-4 d-flex align-items-center">
-              <img class="rounded-circle" src="./images/avatar-1.jpg" alt="" />
-              <div class="  ">
-                <h5>Dianne Russell</h5>
-                <small>UX Architect</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4" data-aos="fade-down" data-aos-delay="150">
-          <div class="review">
-            <div class="review-head p-4 bg-white theme-shadow">
-              <div class="text-warning">
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-              </div>
-              <p>
-                Amazing theme ipsum dolor sit amet consectetur adipisicing
-                elit. Assumenda eum animi rerum ipsam impedit dicta
-                voluptatem.
-              </p>
-            </div>
-            <div class="review-person mt-4 d-flex align-items-center">
-              <img class="rounded-circle" src="./images/avatar-1.jpg" alt="" />
-              <div class="  ">
-                <h5>Dianne Russell</h5>
-                <small>UX Architect</small>
-              </div>
-            </div>
-          </div>
-        </div>
+        <?php
+        }
+        ?>
 
       </div>
     </section>
@@ -279,85 +145,49 @@
       <h1>商品</h1>
       <h3>療育 你的內在</h3>
       <div class="row justify-content-center">
-        <div class="col-4 card-col">
-          <!-- <h2>Card Image</h2>
-            <p>Image at the top (card-img-top):</p> -->
-          <div class="card" style="width:200px">
-            <img class="card-img-top" src="./images/product/crystal-1.avif" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">黑髮晶銀曜石白水晶手錬</h4>
-              <p class="card-text">Some example text. John Doe is an architect</p>
-              <a href="#tab-es6" class="btn btn-primary">See Profile</a>
+        <?php
+        $rows = $Product->all(['sh' => 1]);
+        foreach ($rows as $row) {
+        ?>
+          <div class="col-4 card-col">
+            <div class="card" style="width:200px">
+              <img class="card-img-top" src="./images/product/<?= $row['img'] ?>" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title"><?= $row['title'] ?></h4>
+                <p class="card-text"><?= $row['contents'] ?></p>
+                <a href="#tab-es6" class="btn btn-primary">See Profile</a>
+              </div>
             </div>
           </div>
-        </div>
+        <?php
+        }
+        ?>
 
-        <div class="col-4 card-col">
-          <div class="card" style="width:200px">
-            <img class="card-img-top" src="./images/product/magicCandle.png" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">魔法蠟燭</h4>
-              <p class="card-text">Some example text. John Doe is an architect</p>
-              <a href="#tab-es6" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-4 card-col">
-          <div class="card" style="width:200px">
-            <img class="card-img-top" src="./images/product/incense.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">移動式無線擴香儀</h4>
-              <p class="card-text">Some example text. John Doe is an architect</p>
-              <a href="#tab-es6" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- 服務 -->
     <section class="et-slide" id="tab-service">
       <h1>服務</h1>
       <div class="row justify-content-center">
-        <div class="col-4 card-col">
-          <div class="card" style="width:1000px">
-            <img class="card-img  bg-transparent" src="./images/tarotsSection/tarot-2.jpg" alt="Card image" style="width:100%">
-            <div class="card-body card-img-overlay d-flex justify-content-center flex-column">
-              <div class="bg-darkgray">
-                <h4 class="card-title">塔羅</h4>
-                <p class="card-text">療育 你的內在小孩</p>
-                <a href="#tab-es6" class="btn btn-primary">See Profile</a>
+        <?php
+        $rows = $Service->all(['sh' => 1]);
+        foreach ($rows as $row) {
+        ?>
+          <div class="col-4 card-col">
+            <div class="card" style="width:200px">
+              <img class="card-img  bg-transparent" src="./images/service/<?= $row['img'] ?>" alt="Card image" style="width:100%">
+              <div class="card-body card-img-overlay d-flex justify-content-center flex-column">
+                <div class="bg-darkgray">
+                  <h4 class="card-title"><?= $row['title'] ?></h4>
+                  <p class="card-text"><?= $row['contents'] ?></p>
+                  <a href="#tab-es6" class="btn btn-primary">See Profile</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-4 card-col">
-          <div class="card" style="width:200px">
-            <img class="card-img  bg-transparent" src="./images/service/ziWei.webp" alt="Card image" style="width:100%">
-            <div class="card-body card-img-overlay d-flex justify-content-center flex-column">
-              <div class="bg-darkgray">
-                <h4 class="card-title">紫微斗數</h4>
-                <p class="card-text">遇見更好的自己</p>
-                <a href="#tab-es6" class="btn btn-primary">See Profile</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-4 card-col">
-          <div class="card" style="width:200px">
-            <img class="card-img  bg-transparent" src="./images/service/name-1.jpeg" alt="Card image" style="width:100%">
-            <div class="card-body card-img-overlay d-flex justify-content-center flex-column">
-              <div class="bg-darkgray">
-                <h4 class="card-title">姓名學</h4>
-                <p class="card-text">取名與改名</p>
-                <a href="#tab-es6" class="btn btn-primary">See Profile</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <?php
+        }
+        ?>
       </div>
     </section>
 
@@ -388,83 +218,39 @@
 商品
 服務 -->
         <div class="row align-items-center" style="margin-top:2rem; margin-left:1rem;">
-          <div class="col footer-nav">
-            <h3>預約占卜</h3>
-            <ul>
-              <a href="">
-                <li>link</li>
-              </a>
-              <a href="">
-                <li>link</li>
-              </a>
-              <a href="">
-                <li>link</li>
-              </a>
-            </ul>
-          </div>
 
-          <div class="col footer-nav">
-            <h3>牌義 • 教學</h3>
-            <ul>
-              <a href="">
-                <li>link</li>
+          <!-- foreach $mainFooters -->
+          <?php
+          $mainFooters = $Footer->all(['sh' => 1, "main_id" => 0]);
+          foreach ($mainFooters as $mainFooter) {
+          ?>
+            <div class="col footer-nav">
+              <a href="<?= $mainFooter['href'] ?>" class="footer-a">
+                <h3><?= $mainFooter['title'] ?></h3>
               </a>
-              <a href="">
-                <li>link</li>
-              </a>
-              <a href="">
-                <li>link</li>
-              </a>
-            </ul>
-          </div>
+              <ul>
 
-          <div class="col footer-nav">
-            <h3>客戶回饋</h3>
-            <ul>
-              <a href="">
-                <li>link</li>
-              </a>
-              <a href="">
-                <li>link</li>
-              </a>
-              <a href="">
-                <li>link</li>
-              </a>
-            </ul>
-          </div>
+                <!-- foreach $subFooters -->
+                <?php
+                $subFooters = $Footer->all(['sh' => 1, "main_id" => $mainFooter['id']]);
+                foreach ($subFooters as $subFooter) {
+                ?>
+                  <a href="<?= $subFooter['href'] ?>">
+                    <li><?= $subFooter['title'] ?></li>
+                  </a>
+                <?php
+                }
+                ?>
+                <!-- end of foreach -->
 
-          <div class="col footer-nav">
-            <h3>商品</h3>
-            <ul>
-              <a href="">
-                <li>link</li>
-              </a>
-              <a href="">
-                <li>link</li>
-              </a>
-              <a href="">
-                <li>link</li>
-              </a>
-            </ul>
-          </div>
+              </ul>
+            </div>
+          <?php
+          }
+          ?>
+          <!-- end of foreach -->
 
-          <div class="col footer-nav">
-            <h3>服務</h3>
-            <ul>
-              <a href="">
-                <li>link</li>
-              </a>
-              <a href="">
-                <li>link</li>
-              </a>
-              <a href="">
-                <li>link</li>
-              </a>
-            </ul>
-          </div>
-        </div>
 
-        <!-- end of php foreach -->
       </section>
 
     </section>
@@ -474,7 +260,7 @@
     <section class="footer-bottom">
       <section class='sign-up'>
         <p style="margin-right:20px;">免費註冊！！:</p>
-        <button>Sign Up</button>
+        <button class='footer-button'>Sign Up</button>
       </section>
 
 
