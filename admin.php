@@ -1,3 +1,4 @@
+<?php include_once "./api/base.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,6 +61,9 @@
             height: 100%;
             /* background-color: teal; */
             background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .topbar-main>.main-container {
@@ -148,8 +152,12 @@
         </a>
         <div class="topbar-main">
             <div class="main-container"> <i class="ri-menu-line"></i></div>
-
+            <div class="button-container-admin">
+                <button id="back2Index">返回首頁</button>
+            </div>
+            <div class="blank-block"></div>
         </div>
+
     </section>
     <!-- end of Top Bar -->
 
@@ -177,6 +185,11 @@
         ?>
     </div>
 
+    <script>
+        $("#back2Index").on('click', function() {
+            location.href = "index.php";
+        })
+    </script>
 </body>
 
 </html>

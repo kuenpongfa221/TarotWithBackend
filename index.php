@@ -1,4 +1,7 @@
-<?php include_once "./api/base.php" ?>
+<?php include_once "./api/base.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,10 +40,56 @@
           <img src="./images/bywindLogo.png" alt="">
         </a>
       </div>
-      <div class="button-container">
-        <button>登入</button>
-      </div>
 
+      <?php
+      if ($_SESSION['user'] == 'admin') {
+
+        echo "<div class='button-container'>";
+        echo "<h3 style='margin-bottom:2%;margin-right:2%;'>~~歡迎admin~~ </h3>";
+        echo "<button style='width:125px;' id='adminBtn'>返回管理頁面</button>";
+        echo "</div>";
+      } else {
+        // button 開login modal
+        echo "<div class='button-container'>";
+        #<button onclick="document.getElementById('id01').style.display='block'" id="login">登入</button>
+        echo "<button id='login'>登入</button>";
+        echo "</div>";
+      }
+      ?>
+      <!-- button 開login modal -->
+      <!-- <div class="button-container"> -->
+      <!-- <button onclick="document.getElementById('id01').style.display='block'" id="login">登入</button> -->
+      <!-- <button id="login">登入</button> -->
+      <!-- </div> -->
+      <!-- Login Modal開始 -->
+      <div id="id01" class="modal" style="z-index:100;">
+
+        <form class="modal-content animate" action="./api/login.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="./images/img_avatar2.png" alt="Avatar" class="avatar">
+          </div>
+
+          <div class="modal-container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+      <!-- Login Modal結束 -->
     </div>
     <div class="et-hero-tabs-container">
       <a class="et-hero-tab" href="#tab-reserve">預約占卜</a>
@@ -306,6 +355,27 @@
       const imgName = $(".img-container").data('img-src');
       $(".img-container").css('backgroundImage',
         `linear-gradient(rgba(70, 70, 70, 0.8), rgba(70, 70, 70, 0.8)),url("./images/tarotsSection/${imgName}")`)
+
+      const loginBtn = $("#login");
+      loginBtn.on('click', () => {
+        $("#id01").show();
+      })
+    })
+
+    // 跟Login Modal有關的code
+    // Get the modal
+    const modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    // 返回管理頁面 跳到
+    $("#adminBtn").on('click', function() {
+      location.href = "admin.php?do=reserves";
     })
   </script>
 </body>

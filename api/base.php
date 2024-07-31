@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 class DB
 {
     protected $table;
@@ -128,3 +128,4 @@ $Testimonials = new DB('testimonials');
 $Product = new DB('products');
 $Service = new DB('services');
 $Footer = new DB('footers');
+$Users = new DB('users');
