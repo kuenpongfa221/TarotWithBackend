@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2024-07-31 08:02:13
+-- 產生時間： 2024-07-31 10:06:57
 -- 伺服器版本： 10.4.32-MariaDB
 -- PHP 版本： 8.2.12
 
@@ -129,10 +129,10 @@ CREATE TABLE `reserves` (
 
 INSERT INTO `reserves` (`id`, `img`, `title`, `btnText`, `sh`) VALUES
 (1, 'tarotHeroSec.jpg', '塔羅，遇見你的內在天賦之旅', '立即預約占卜', 0),
-(2, 'tarot-2.jpg', '塔羅，遇見更好的自己', '立即預約占卜', 1),
+(2, 'tarot-2.jpg', '塔羅，遇見更好的自己', '立即預約占卜', 0),
 (3, '卡比.png', 'Kirby is Very Cute !!', 'We love kirby', 0),
 (5, 'kirbyGIF.gif', '卡比超Q超口愛!!', '卡比-2', 0),
-(9, 'goblin.jpg', '哥殺', '哥殺', 0),
+(9, 'goblin.jpg', '哥殺', '哥殺', 1),
 (10, 'jojoGoldenWind.jpg', '黃金之風2', '黃金之風', 0);
 
 -- --------------------------------------------------------
@@ -184,6 +184,25 @@ INSERT INTO `testimonials` (`id`, `img`, `name`, `jbTitle`, `contents`, `sh`) VA
 (3, 'orphans.jpg', '鐵血的孤兒', '鐵血的孤兒', '鐵血的孤兒', 1),
 (4, 'avatar-1.jpg', 'Dianne Russell', 'UX Architect', 'Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi rerum ipsam impedit dicta voluptatem.', 1);
 
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `acc` text NOT NULL,
+  `pw` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- 傾印資料表的資料 `users`
+--
+
+INSERT INTO `users` (`id`, `acc`, `pw`) VALUES
+(1, 'admin', '1234');
+
 --
 -- 已傾印資料表的索引
 --
@@ -225,6 +244,12 @@ ALTER TABLE `testimonials`
   ADD PRIMARY KEY (`id`);
 
 --
+-- 資料表索引 `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- 在傾印的資料表使用自動遞增(AUTO_INCREMENT)
 --
 
@@ -263,6 +288,12 @@ ALTER TABLE `services`
 --
 ALTER TABLE `testimonials`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- 使用資料表自動遞增(AUTO_INCREMENT) `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
