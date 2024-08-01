@@ -154,6 +154,7 @@
             <div class="main-container"> <i class="ri-menu-line"></i></div>
             <div class="button-container-admin">
                 <button id="back2Index">返回首頁</button>
+                <a href="./api/logout.php"><button id="backend-logout">登出</button></a>
             </div>
             <div class="blank-block"></div>
         </div>

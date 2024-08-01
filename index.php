@@ -42,11 +42,12 @@
       </div>
 
       <?php
-      if ($_SESSION['user'] == 'admin') {
+      if (isset($_SESSION['user']) && $_SESSION['user'] == 'admin') {
 
         echo "<div class='button-container'>";
         echo "<h3 style='margin-bottom:2%;margin-right:2%;'>~~歡迎admin~~ </h3>";
-        echo "<button style='width:125px;' id='adminBtn'>返回管理頁面</button>";
+        echo "<button style='width:125px; margin-right:10px;' id='adminBtn'>返回管理頁面</button>";
+        echo "<button style='width:125px;' id='index-logout'>登出</button>";
         echo "</div>";
       } else {
         // button 開login modal
@@ -376,6 +377,11 @@
     // 返回管理頁面 跳到
     $("#adminBtn").on('click', function() {
       location.href = "admin.php?do=reserves";
+    })
+
+    //登出按鈕 登出
+    $("#index-logout").on('click', function() {
+      location.href = "./api/logout.php";
     })
   </script>
 </body>
