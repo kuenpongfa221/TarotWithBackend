@@ -270,6 +270,7 @@ a {
   justify-content: center;
   align-items: center;
   padding-bottom: 2rem;
+  margin-top: 1rem;
 }
 .footer-logo-a-tag {
   display: flex;
