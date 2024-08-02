@@ -37,7 +37,7 @@
     <div class="index-top-bar">
       <div class="logo">
         <a href="#" class='header-logo-a-tag'>
-          <img src="./images/bywindLogo.png" alt="">
+          <img src="./images/bywindLogo-2.png" alt="">
         </a>
       </div>
 
