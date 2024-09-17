@@ -35,6 +35,7 @@
   <section class="et-hero-tabs">
     <!-- <h1>STICKY SLIDER NAV</h1> -->
     <div class="index-top-bar">
+      <!-- <div class="blank"></div> -->
       <div class="logo">
         <a href="#" class='header-logo-a-tag'>
           <img src="./images/bywindLogo-2.png" alt="">

@@ -40,13 +40,15 @@ a {
   justify-content: end;
   padding-top: 1rem;
 
-  flex-basis: calc(50% + 97.69px);
+  /* flex-basis: calc(50% + 97.69px); */
+  flex-basis: calc(50% + 26px);
 }
 .logo > a > img {
   height: 100%;
 }
 .button-container {
-  flex-basis: calc(50% - 97.69px);
+  /* flex-basis: calc(50% - 97.69px); */
+  flex-basis: calc(50% - 26px);
   display: flex;
   justify-content: end;
   align-items: end;
@@ -347,6 +349,10 @@ ul > a > li {
   height: 100%;
   width: 100%;
   text-align: end;
+}
+.header-logo-a-tag > img {
+  width: 52px;
+  height: 41px;
 }
 
 .footer {
