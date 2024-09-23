@@ -45,6 +45,7 @@ a {
 }
 .logo > a > img {
   height: 100%;
+  width: auto;
 }
 .button-container {
   /* flex-basis: calc(50% - 97.69px); */
@@ -419,10 +420,13 @@ ul > a > li {
   font-size: 1.2rem;
   border-radius: 10px;
   cursor: pointer;
+  background-color: bisque;
+  color: #484444;
 }
 .footer-button:hover {
   transition: all 0.3s ease;
-  background-color: #fff;
+  background-color: rgb(188 170 146);
+  color: #eee;
 }
 
 /* Login Modal的CSS */
