@@ -5,8 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <title>隨風而來-後台管理</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./script/opcl.js"></script>
     <style>
@@ -44,7 +45,7 @@
             /* background-color: khaki; */
 
             display: flex;
-            justify-content: start;
+            /* justify-content: start; */
             align-items: center;
             padding-left: 30px;
 
@@ -53,7 +54,7 @@
         }
 
         .logo>img {
-            width: 30%;
+            width: 20%;
         }
 
         .topbar>.topbar-main {
